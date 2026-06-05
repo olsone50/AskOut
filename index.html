@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Date</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+      <img src="/images/envelope.png" alt="Envelope" id="envelope" />
+      <p>♡ Letter for You ♡</p>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+      <div class="letter-window">
+        <h1 id="letter-title">Can I take you on a date?</h1>
+
+        <img src="/images/cat_heart.gif" class="cat" id="letter-cat" />
+
+        <div class="buttons" id="letter-buttons">
+          <img src="/images/yes.png" class="btn yes-btn" alt="Yes" />
+
+          <div class="no-wrapper">
+            <img src="/images/no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+          <strong>Movie Date:</strong> FDL Odyssey: Backrooms 7:10 PM, Monday June 8th
+        </p>
+      </div>
+    </div>
+    <audio id="bg-audio" src="audio/beach-ambiance.mp3" loop autoplay muted playsinline></audio>
+
+    <input id="volume-slider" type="range" min="0" max="100" step="1" value="100" aria-label="Volume" />
+
+    <button id="audio-toggle" aria-pressed="false" title="Toggle background audio">🔈</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -5,6 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("/images/beach.jpg");
+    background-size: cover;
+    background-position: center;
     font-family: "Pixelify Sans", sans-serif;
 }
 
